@@ -56,7 +56,8 @@ mkdir -p /var/lib/consul /var/lib/nomad /etc/consul.d /etc/nomad.d
 
 cat << EOCCF >/etc/consul.d/server.hcl
 advertise_addr = "${LOCAL_IPV4}"
-bootstrap =  false
+bootstrap =  true
+bootstrap_expect = 3
 client_addr =  "0.0.0.0"
 data_dir = "/var/lib/consul"
 datacenter = "${DATACENTER_NAME}"
