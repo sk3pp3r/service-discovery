@@ -5,6 +5,7 @@
 # including docker and DnsMasq for *.service.consul DNS resolving
 # 
 # Script assume that instance is running in AWS and have "ec2:DescribeInstances" permissions in IAM Role
+# add line to check vscode by haim cohen.
 
 set -x
 export TERM=xterm-256color
